@@ -1,6 +1,6 @@
 Sub VBA_of_wallstreet():
 
-Dim sheet as worksheet
+Dim sheet as Worksheet
 
 For Each sheet in Worksheets
 
