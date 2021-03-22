@@ -1,8 +1,8 @@
 Sub VBA_of_wallstreet():
 
-Dim sheet as Worksheet
+Dim sheet As Worksheet
 
-For Each sheet in Worksheets
+For Each sheet In Worksheets
 
     'set variables
     Dim tick As String
@@ -63,6 +63,8 @@ For Each sheet in Worksheets
             volume = volume + sheet.Cells(x, 7).Value
     
         End If
+        
+Next x
  
     'set value for y, length of our summary table
     For y = 2 To lastrowsummary
@@ -75,10 +77,7 @@ For Each sheet in Worksheets
         
         End If
 
-    Next y   
+    Next y
 
-Next x  
 
 Next sheet
-
-End Sub
